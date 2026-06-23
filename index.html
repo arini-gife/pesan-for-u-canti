@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Dede</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#fff7fa,#ffeef5,#ffdfe9);
+overflow:hidden;
+}
+
+.slide{
+display:none;
+width:100%;
+height:100vh;
+justify-content:center;
+align-items:center;
+padding:30px;
+}
+
+.active{
+display:flex;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:25px;
+max-width:650px;
+width:100%;
+text-align:center;
+box-shadow:0 0 20px rgba(255,182,193,.4);
+}
+
+.text{
+font-size:20px;
+line-height:1.8;
+white-space:pre-line;
+}
+
+button{
+margin-top:20px;
+padding:12px 24px;
+border:none;
+border-radius:30px;
+background:#ff9fc2;
+color:white;
+font-size:16px;
+}
+
+.progress{
+margin-top:15px;
+font-size:20px;
+color:#ff9fc2;
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="music" loop>
+<source src="lagu.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PEMBUKA -->
+
+<div class="slide active">
+
+<div class="card">
+
+<h2>Dari Kaka 🌷</h2>
+
+<p>
+Untuk Dedee Cantii
+</p>
+
+<br>
+
+<p>
+ada sesuatu yang belum pernah benar-benar selesai
+aku omongin ke dede.
+</p>
+
+<button onclick="mulai()">
+🎀 Buka Surat
+</button>
+
+</div>
+
+</div>
+
+<!-- DRAFT 1 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h2>draft 1 dari 4 yang kuhapus</h2>
+
+<div class="text">
+aku kangen.
+</div>
+
+<div class="progress">
+● ○ ○ ○
+</div>
+
+<button onclick="nextSlide()">
+lanjut
+</button>
+
+</div>
+
+</div>
+
+<!-- ASLI 1 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h2>yang sebenarnya ingin aku bilang</h2>
+
+<div class="text">
+
+aku selalu kangen dede.
+
+bahkan setelah semuanya selesai,
+
+perasaan itu nggak pernah benar-benar pergi.
+
+</div>
+
+<button onclick="nextSlide()">
+lanjut
+</button>
+
+</div>
+
+</div>
+<!-- DRAFT 2 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h2>draft 2 dari 4 yang kuhapus</h2>
+
+<div class="text">
+harusnya juni spesial.
+</div>
+
+<div class="progress">
+○ ● ○ ○
+</div>
+
+<button onclick="nextSlide()">
+lanjut
+</button>
+
+</div>
+
+</div>
+
+<!-- ASLI 2 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h2>yang sebenarnya ingin aku bilang</h2>
+
+<div class="text">
+
+harusnya bulan juni jadi satu tahun kita.
+
+harusnya ada hari yang kita rayakan bersama.
+
+tapi ternyata cerita kita berhenti lebih dulu.
+
+</div>
+
+<button onclick="nextSlide()">
+lanjut
+</button>
+
+</div>
+
+</div>
+
+<!-- DRAFT 3 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h2>draft 3 dari 4 yang kuhapus</h2>
+
+<div class="text">
+aku baik-baik aja.
+</div>
+
+<div class="progress">
+○ ○ ● ○
+</div>
+
+<button onclick="nextSlide()">
+lanjut
+</button>
+
+</div>
+
+</div>
+
+<!-- ASLI 3 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h2>yang sebenarnya ingin aku bilang</h2>
+
+<div class="text">
+
+waktu kita putus,
+
+aku nggak baik-baik aja.
+
+aku kehilangan arah.
+
+aku sering nangis.
+
+aku sering ngelamun.
+
+dan aku selalu ingat dede.
+
+</div>
+
+<button onclick="nextSlide()">
+lanjut
+</button>
+
+</div>
+
+</div>
+
+<!-- DRAFT 4 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h2>draft 4 dari 4 yang kuhapus</h2>
+
+<div class="text">
+semoga dede bahagia.
+</div>
+
+<div class="progress">
+○ ○ ○ ●
+</div>
+
+<button onclick="nextSlide()">
+lanjut
+</button>
+
+</div>
+
+</div>
+
+<!-- ASLI 4 -->
+
+<div class="slide">
+
+<div class="card">
+
+<h2>yang sebenarnya ingin aku bilang</h2>
+
+<div class="text">
+
+aku memang ingin dede bahagia.
+
+tapi kalau aku jujur,
+
+sampai hari ini aku masih berharap.
+
+aku masih berharap dede kembali.
+
+</div>
+
+<button onclick="nextSlide()">
+lanjut
+</button>
+
+</div>
+
+</div>
+<!-- SURAT -->
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+hai dede.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+aku senang pernah kenal dede.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+mungkin dede nggak sadar.
+
+tapi dede adalah banyak hal pertama buat aku.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+pacar pertama.
+
+first experience pertama.
+
+dan orang pertama yang berhasil bikin aku sayang sebesar ini.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+11 bulan mungkin terdengar biasa.
+
+tapi buat aku,
+
+itu penuh cerita.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+harusnya juni jadi satu tahun kita.
+
+tapi ternyata kita berhenti lebih dulu.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+waktu kita putus,
+
+aku benar-benar kehilangan arah.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+kita sempat asing.
+
+dan aku nggak suka masa-masa itu.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+makanya aku terus ganggu dede.
+
+karena aku nggak mau kehilangan dede sepenuhnya.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+waktu kita mulai dekat lagi,
+
+aku sedikit membaik.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+<div class="slide">
+<div class="card">
+<div class="text">
+
+aku selalu senang setiap ada chat dari dede.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+aku selalu senang mendengar suara dede.
+
+sesederhana itu.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+aku juga selalu senang kalau dede cerita apa pun ke aku.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+bahkan ketika cerita itu tentang masalah dede
+
+dan pacar dede yang sekarang.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+walaupun kadang itu bikin hati aku sakit.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+karena jujur...
+
+aku masih cemburu.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+aku masih kangen.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+aku masih berharap.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+aku nggak pernah punya niat buat melupakan dede.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+nggak pernah.
+
+sedikit pun nggak.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+aku sempat mencari orang lain.
+
+bahkan sekarang aku punya pacar.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+tapi aku sadar.
+
+aku nggak pernah benar-benar bisa mencintainya
+
+seperti aku mencintai dede.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+kalau waktu bisa diulang,
+
+aku tetap akan memilih dede.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+sekali lagi.
+
+dan berkali-kali lagi.
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+
+<div class="slide">
+<div class="card">
+<div class="text">
+
+terima kasih.
+
+untuk hampir satu tahun yang indah itu.
+
+🌷
+
+</div>
+<button onclick="nextSlide()">lanjut</button>
+</div>
+</div>
+<!-- HALAMAN JAWABAN -->
+
+<div class="slide">
+
+<div class="card">
+
+<h2>untuk dede 💗</h2>
+
+<p style="margin-bottom:20px;">
+kalau dede mau,
+aku juga ingin mendengar isi hati dede.
+</p>
+
+<textarea id="jawaban"
+placeholder="tulis apa pun yang ingin dede sampaikan..."
+style="
+width:100%;
+height:180px;
+padding:15px;
+border-radius:15px;
+border:2px solid #ffc6da;
+resize:none;
+font-size:16px;
+"></textarea>
+
+<button onclick="kirimWA()">
+💗 Kirim Ke Kaka
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+let current = 0;
+const slides = document.querySelectorAll(".slide");
+
+function mulai(){
+
+document.getElementById("music").play();
+
+slides[current].classList.remove("active");
+current = 1;
+slides[current].classList.add("active");
+
+}
+
+function nextSlide(){
+
+slides[current].classList.remove("active");
+
+current++;
+
+if(current < slides.length){
+slides[current].classList.add("active");
+}
+
+}
+
+function kirimWA(){
+
+let pesan =
+"Halo Kaka 💗%0A%0A" +
+encodeURIComponent(
+document.getElementById("jawaban").value
+);
+
+window.open(
+"https://wa.me/6289519926473?text=" + pesan,
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
